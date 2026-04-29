@@ -1,0 +1,172 @@
+/* formatar a pagina total*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+
+}
+
+/* Header css*/
+
+header  {
+    height: 130px;
+    width: auto;
+    background-color: #082047;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    
+}
+header img {
+    height: 230px;
+    width: auto;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    color: white;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.botoes-senha a {
+    text-decoration: none;
+    color: white;
+}
+.botoes-senha div a {
+    color: #082047;
+    background-color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 15px;
+    margin-right: 15px ;
+}
+
+.botoes-senha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+/*Main CSS*/
+
+
+
+.linkAcesso {
+    height: 850px;
+    width: auto;
+    background-image: url(/img/velito-eYgmMc5HA3M-unsplash.jpg);
+    background-size: cover; /* Faz a imagem cobrir a tela toda */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não deixa a imagem repetir */
+    background-attachment: fixed; /* Opcional: a imagem não rola com a página */
+
+    display: flex;
+    align-items: end;
+    
+    
+
+}
+.linkAcesso a {
+    text-decoration: none;
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 10%;
+    margin-left: 5%;
+}
+
+article {
+    background-color: #082047;
+    height: 1700px;
+    width: auto;
+
+}
+
+.localizacao-e-horarios {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+
+.locazacao h2 {
+    color: white;
+    font-size: 60px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+
+}
+
+.locazacao iframe {
+    width: 560px;
+    height: 350px;
+}
+
+.locazacao p {
+    font-size: 28;
+    font-weight: 300;
+    color: white;
+    text-align: left;
+}
+
+.horario-funcionamento {
+    width: 370px;   
+    height: 615px;
+    background-color: white;
+    opacity: 50%;
+    border-radius: 15px;
+    margin-top: 100px;
+    
+}
+
+.horario-funcionamento h2 {
+    font-size: 28;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.horario-funcionamento li {
+    list-style: none;
+    font-size: 27px;
+    gap: 10px;
+    width: 300px;
+    text-align: center;
+
+}
+
+/*Footer CSS*/
+
+footer {
+    height: 260px;
+    width: auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.servicos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.servicos a {
+    text-decoration: none;
+    color: black;
+}
+.if-copy {
+    font-size: 14px;
+    color: #082047;
+}

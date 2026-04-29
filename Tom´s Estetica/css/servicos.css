@@ -1,0 +1,175 @@
+/* formatar a pagina total*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+
+}
+
+/* Header css*/
+
+header  {
+    height: 130px;
+    width: auto;
+    background-color: #082047;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    
+}
+header img {
+    height: 230px;
+    width: auto;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    color: white;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.botoes-senha a {
+    text-decoration: none; 
+    color: white;
+}
+.botoes-senha div a {
+    color: #082047;
+    background-color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 15px;
+    margin-right: 15px ;
+}
+
+.botoes-senha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/*Main muito foda serviços*/
+
+.carro {
+    height: 180px;
+    width: 100%;
+    background-size: cover; /* Faz a imagem cobrir a tela toda */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não deixa a imagem repetir */
+
+
+    /*TEXTOS*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: white;
+
+    filter: brightness(50%); /* 0% é totalmente preto, 100% é a imagem original */
+}
+#carro-1 {
+    background-image: url("/img/idzard-schiphof-bhuyaZftOB8-unsplash.jpg");
+}
+#carro-2 {
+    background-image: url(/img/wp12509327-ford-raptor-4k-wallpapers.jpg);
+}
+#carro-3 {
+    background-image: url(/img/loris-demaria-oOeNmUogljU-unsplash.jpg);
+}
+
+article {
+    height: 1000px;
+    margin: auto;
+    background-color: white;
+}
+
+.servicos-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide em duas colunas iguais */
+   /* gap: 40px;  Espaço entre os itens */
+}
+.servico {
+  display: flex;
+  flex-direction: column;
+
+  height: 120px;
+  width: 570px; 
+}
+
+.servico h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.servico p {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+/* Posicionamento */
+.item-esquerda {
+  grid-column: 1; /* Força a ficar na coluna da esquerda */
+  text-align: left;
+
+  margin-left: 50px;
+}
+
+.item-direita {
+  grid-column: 2; /* Força a ficar na coluna da direita */
+  text-align: left;
+  margin-top: 200px; /* Cria o efeito de escada vertical */
+}
+
+.banner-moto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: white;
+
+    height: 170px;
+    width: auto;
+    background-color: #082047;
+
+}
+
+#servicos-container-pt2 {
+    height: 500px;
+    width: auto;
+}
+/*Footer CSS*/
+
+footer {
+    height: 260px;
+    background-color: #082047;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.servicos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.servicos a {
+    text-decoration: none;
+    color: white;
+}
+.if-copy {
+    font-size: 14px;
+    color: white;
+}

@@ -1,0 +1,12 @@
+Verificar as cores dos textos no background dos 
+carros dos Serviços.html, ta preto junto com a img
+
+
+Verifiar o porquê o icon do placeholer do login não aparece
+
+alinhamento horario no index
+
+
+Está sem link para o index na logo do login
+
+

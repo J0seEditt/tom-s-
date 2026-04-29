@@ -1,0 +1,117 @@
+/* formatar a pagina total*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+
+}
+
+/* Header css*/
+
+header  {
+    height: 130px;
+    width: auto;
+    background-color: #082047;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    
+}
+header img {
+    height: 230px;
+    width: auto;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    color: white;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.botoes-senha a {
+    text-decoration: none; 
+    color: white;
+}
+.botoes-senha div a {
+    color: #082047;
+    background-color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 15px;
+    margin-right: 15px ;
+}
+
+.botoes-senha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/*Main do Sobre (*-*) */
+article {
+    height: 1460px;
+    width: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 700px;
+    width: 880px;
+}
+.container-inter {
+    width: 600px;
+}
+.container h1 {
+    padding-bottom: 50px;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: -2px;
+}
+.historia {
+    font-weight: 500;
+}
+
+.frase {
+    padding-top: 50px;
+}
+
+
+
+
+
+/*Footer CSS*/
+
+footer {
+    height: 260px;
+    background-color: #082047;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.servicos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.servicos a {
+    text-decoration: none;
+    color: white;
+}
+.if-copy {
+    font-size: 14px;
+    color: white;
+}

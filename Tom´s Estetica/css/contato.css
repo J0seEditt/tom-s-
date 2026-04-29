@@ -1,0 +1,118 @@
+/* formatar a pagina total*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+
+}
+
+/* Header css*/
+
+header  {
+    height: 130px;
+    width: auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    
+}
+header img {
+    height: 230px;
+    width: auto;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    color: #082047;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: #082047;
+}
+
+.botoes-senha a {
+    text-decoration: none; 
+    color: #082047;
+}
+.botoes-senha div a {
+    color: white;
+    background-color: #082047;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 15px;
+    margin-right: 15px ;
+}
+
+.botoes-senha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/*Main do contatos (*-*) */
+
+article {
+    height: 730px;
+    width: auto;
+    background-color: #082047;
+}
+.titulo {
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 100px 0px; 
+}
+.links {
+    display: flex;
+    flex-direction: column;
+}
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    padding: 0px 50px;
+}
+.endereco {
+    color: white;
+    font-size: 28px;
+    padding: 20px 50px;
+}
+.redes-sociais {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 200px;
+}
+
+/*Footer CSS*/
+
+footer {
+    height: 260px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.servicos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.servicos a {
+    text-decoration: none;
+    color: #082047;
+}
+.if-copy {
+    font-size: 14px;
+    color: #082047;
+}
