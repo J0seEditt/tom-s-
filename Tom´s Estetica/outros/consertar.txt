@@ -10,3 +10,6 @@ alinhamento horario no index
 Está sem link para o index na logo do login
 
 
+corrigir o tamanho das caixas css cSATRO
+
+

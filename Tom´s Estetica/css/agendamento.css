@@ -57,12 +57,9 @@ header nav ul a {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
-    
 }
 
-/*Main login*/
+/*Main agendamentos*/
 
 main {
     height: 850px;
@@ -73,63 +70,68 @@ main {
     align-items: center;
 }
 
-.codastro-container {
-    height: 330px;
-    width: 360px;
-    
+.row-group {
+    margin-bottom: 20px;
 }
 
-.input-group {
-    margin-bottom: 10px;
+/* Reset da setinha padrão */
+summary {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
 }
 
-.input-group label {
-    margin-bottom: 80px;
-    color: white;
+summary::-webkit-details-marker {
+  display: none;
 }
 
-.input-group input {
-    width: auto;
-    padding: 12px 15px;
-    background: transparent;
-    border: 1px solid white;
-    outline: none;
-
-    text-transform: uppercase;
-    font-weight: 500;
-    color: white;
-}
-.login-btn {
-    width: 100%;
-    padding: 12px;
-    background: white;
-    border: none;
-    color: #082047;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
-    margin-top: 50px;
+/* Estilo do Botão (Baseado na imagem) */
+.btn-main {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 15px 20px;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  width: 300px;
+  box-sizing: border-box;
 }
 
-.login-btn:hover {
-    background: #5a3782;
-    transform: translateY(-2px);
+/* O "Botão +" dentro da linha */
+.btn-add {
+  background-color: #fff;
+  color: #051937;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-weight: bold;
 }
 
-.login-btn:active {
-    transform: translateY(0);
+/* Conteúdo que aparece ao abrir */
+.content {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: none;
+  padding: 15px;
+  color: #ccc;
+  border-radius: 0 0 5px 5px;
 }
 
-.register-link {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 0.9rem;
-    color: #666;
+.content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.register-link a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+.content li {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /*Footer CSS*/
