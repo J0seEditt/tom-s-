@@ -33,48 +33,79 @@
         </div>
     </header>
     <main>
-        <div class="container-agrndamento">
-            <div class="container">
-                <!-- Item Retrátil 1 -->
-                <div class="row-group">
-                    <details>
-                        <summary class="btn-main">
-                            SERVIÇOS
-                            <span class="btn-add">+</span>
-                        </summary>
-                        <div class="content">
-                            <ul>
-                                <li>Lavagem Express (Hatch, Sedan/SUV, Caminhonetes)</li>
-                                <li>Lavagem Premium (Detalhamento de emblemas, cantos e enceramento)</li>
-                                <li>Higienização Interna (Bancos, teto, carpete, cintos e ar-condicionado)</li>
-                                <li>Remoção de Chuva Ácida e Cristalização de Vidros</li>
-                                <li>Restauração de Faróis com Vitrificação</li>
-                                <li>Polimento Comercial (Remoção de 60% a 70% dos riscos)</li>
-                                <li>Polimento Técnico (Remoção de 90% a 95% dos riscos)</li>
-                                <li>Pacote Stage I (Premium + Higienização + Comercial + Chuva Ácida)</li>
-                                <li>Pacote Stage II (Premium + Higienização + Comercial + Tratamento Vidros)</li>
-                                <li>Pacote Stage III (Premium + Higienização + Técnico + Vidros + Faróis)</li>
-                            </ul>
-                        </div>
-                    </details>
-                </div>
-                <!-- Item Retrátil 2 -->
-                <div class="row-group">
-                    <details>
-                        <summary class="btn-main">
-                            EXTRAS
-                            <span class="btn-add">+</span>
-                        </summary>
-                        <div class="content">
-                            <ul>
-                                <li>Lavagem Especial</li>
-                                <li>Massagem Facial</li>
-                            </ul>
-                        </div>
-                    </details>
-                </div>
+        <div class="container-agendamento">
+            <div class="container-calender">
+                <!--Imagem provisoria ate puder usar biblioteca-->
+                <img src="/img/Date&Time Picker.png" alt="calender-temporario">
             </div>
-        </div>
+            <div class="container-servicos">
+                <section>
+                    <div class="opicoes-carros">
+                        <select name="servicos-carros-list" id="servicos-carros-list">
+                            <optgroup label="CARROS">
+                                <option value="selcionar_extra">EXTRAS
+                                <option value="lavagem_express_carro">Lavagem Express - Carros</option>
+                                <option value="lavagem_premium_carro">Lavagem Premium - Carros</option>
+                                <option value="higienizacao_interna_carro">Higienização Interna - Carros</option>
+                                <option value="tratamento_vidros_carro">Tratamento dos Vidros - Carros</option>
+                                <option value="restauracao_farois_carro">Restauração dos Faróis - Carros</option>
+                                <option value="polimento_comercial_carro">Polimento Comercial - Carros</option>
+                                <option value="polimento_tecnico_carro">Polimento Técnico - Carros</option>
+                                <option value="pacote_stage1_carro">Pacote Stage I - Carros</option>
+                                <option value="pacote_stage2_carro">Pacote Stage II - Carros</option>
+                                <option value="pacote_stage3_carro">Pacote Stage III - Carros</option>
+                            <optgroup label="MOTOS">
+                                <option value="lavagem_express_moto">Lavagem Express - Motos</option>
+                                <option value="lavagem_premium_moto">Lavagem Premium - Motos</option>
+                                <option value="pacote_stage1_moto">Pacote Stage I - Motos</option>
+                                <option value="pacote_stage2_moto">Pacote Stage II - Motos</option>
+                        </select>
+                    </div>
+                    <div class="servicos-extra">
+                        <select name="servicos-extra-list" id="servicos-extra-list">
+                            <optgroup label="Extra">
+                                <option value="selcionar_extra">EXTRAS
+                                    <!-- Extras de Vidros e Visibilidade -->
+                                <option value="remocao_chuva_acida">Remoção de Chuva Ácida</option>
+                                <option value="cristalizacao_vidros">Cristalização dos Vidros (Melhora até 80% da
+                                    visibilidade)</option>
+
+                                <!-- Extras de Iluminação -->
+                                <option value="restauracao_farois">Restauração dos Faróis (Remoção de amarelado e
+                                    riscos)
+                                </option>
+                                <option value="vitrificacao_farois">Vitrificação de Faróis (Até 1 ano de proteção)
+                                </option>
+
+                                <!-- Extras de Interior -->
+                                <option value="higienizacao_ar_condicionado">Higienização do Ar Condicionado</option>
+                                <option value="detalhamento_mala_estepe">Detalhamento da Mala e Estepe</option>
+                                <option value="sanitizacao_bancos">Limpeza e Sanitização de Bancos</option>
+                                <option value="condicionamento_plasticos_internos">Limpeza Profunda e Condicionamento de
+                                    Plásticos Internos</option>
+
+                                <!-- Extras de Exterior e Motor -->
+                                <option value="enceramento_pintura">Enceramento da Pintura</option>
+                                <option value="descontaminacao_pintura">Descontaminação da Pintura</option>
+                                <option value="restauracao_plasticos_externos">Restauração de Plásticos Externos
+                                </option>
+                                <option value="protecao_antioxidante_motor">Proteção Antioxidante do Motor (Motos)
+                                </option>
+                                <option value="limpeza_lubrificacao_corrente">Limpeza e Lubrificação de Corrente (Motos)
+                                </option>
+                        </select>
+                        <div class="resumo">
+                            <div id="carrinho-servicos">
+                                <span>RESUMO:</span>
+                                <ul id="lista-selecionados">
+                                    <!-- Os itens do Catalogo Tom`s aparecerão aqui, eu acho     -->
+                                </ul>
+                            </div>
+                        </div>
+                        <button type="submit" class="enviar-btn">Enviar</button>
+                    </div>
+                </section>
+            </div>
     </main>
     <footer>
         <div class="servicos">

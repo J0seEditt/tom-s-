@@ -1,15 +1,20 @@
 Verificar as cores dos textos no background dos 
 carros dos Serviços.html, ta preto junto com a img
 
+Colocar um espacemento no elemento 0 e 1 nos serviços
+
 
 Verifiar o porquê o icon do placeholer do login não aparece
 
-alinhamento horario no index
+alinhamento horario no index - FEITO
 
 
-Está sem link para o index na logo do login
+Está sem link para o index na logo do login - FEITO
 
 
 corrigir o tamanho das caixas css cSATRO
 
 
+
+
+--------------------------------------------

@@ -37,6 +37,18 @@ header nav ul a {
     color: white;
 }
 
+header nav ul a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+}
+header nav ul a:hover::after {
+  width: 100%;
+}
+
 .botoes-senha a {
     text-decoration: none;
     color: white;
@@ -70,69 +82,67 @@ main {
     align-items: center;
 }
 
-.row-group {
-    margin-bottom: 20px;
+.container-agendamento {
+    display: flex;
+    justify-content: end;
+    gap: 10%;
 }
 
-/* Reset da setinha padrão */
-summary {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  outline: none;
+.container-calender img {
+    height: 410px;
+    width: 370px;
 }
 
-summary::-webkit-details-marker {
-  display: none;
+select {
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 15px 20px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    width: 300px;
+    margin-bottom: 80px;
 }
 
-/* Estilo do Botão (Baseado na imagem) */
-.btn-main {
-  background: transparent;
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  padding: 15px 20px;
-  border-radius: 5px;
-  letter-spacing: 2px;
-  width: 300px;
-  box-sizing: border-box;
+option {
+    background-color: #051937;
 }
 
-/* O "Botão +" dentro da linha */
-.btn-add {
-  background-color: #fff;
-  color: #051937;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  font-weight: bold;
+optgroup {
+    background-color: #051937;
 }
 
-/* Conteúdo que aparece ao abrir */
-.content {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-top: none;
-  padding: 15px;
-  color: #ccc;
-  border-radius: 0 0 5px 5px;
+.resumo {
+    height: 180px; 
+    width: 610px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 15px 20px;
+    border-radius: 5px;
+    letter-spacing: 2px;
 }
 
-.content ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.enviar-btn {
+    width: 30%;
+    height: 45px;
+    padding: 12px;
+    background: white;
+    border: none;
+    color: #082047;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 10%;
+
+    font-weight: bold;
+    font-size: 16px;
+    
+}
+.enviar-btn:hover {
+    background:  #5a3782;
+    transform: translateY(-2px);
 }
 
-.content li {
-  padding: 10px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
 
 /*Footer CSS*/
 

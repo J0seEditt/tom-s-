@@ -34,6 +34,18 @@ header nav ul {
 header nav ul a {
     text-decoration: none;
     color: white;
+    
+}
+header nav ul a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+}
+header nav ul a:hover::after {
+  width: 100%;
 }
 
 .botoes-senha a {
@@ -72,8 +84,6 @@ header nav ul a {
     display: flex;
     align-items: end;
     
-    
-
 }
 .linkAcesso a {
     text-decoration: none;
@@ -84,6 +94,13 @@ header nav ul a {
     margin-left: 5%;
 }
 
+.linkAcesso a:hover {
+    color: #5a3782;
+    transform: translateY(-2px);
+}
+.linkAcesso a:active {
+    transform: translateY(0);
+}
 article {
     background-color: #082047;
     height: 1700px;
@@ -128,6 +145,13 @@ article {
     border-radius: 15px;
     margin-top: 100px;
     
+}
+
+.horario-funcionamento ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .horario-funcionamento h2 {
