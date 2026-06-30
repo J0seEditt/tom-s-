@@ -75,7 +75,7 @@ header nav ul a:hover::after {
 .linkAcesso {
     height: 850px;
     width: auto;
-    background-image: url(/img/velito-eYgmMc5HA3M-unsplash.jpg);
+    background-image: url(../img/velito-eYgmMc5HA3M-unsplash.jpg);
     background-size: cover; /* Faz a imagem cobrir a tela toda */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Não deixa a imagem repetir */

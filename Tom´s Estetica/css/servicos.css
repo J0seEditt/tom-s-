@@ -89,13 +89,13 @@ header nav ul a:hover::after {
     filter: brightness(50%); /* 0% é totalmente preto, 100% é a imagem original */
 }
 #carro-1 {
-    background-image: url("/img/idzard-schiphof-bhuyaZftOB8-unsplash.jpg");
+    background-image: url("../img/idzard-schiphof-bhuyaZftOB8-unsplash.jpg");
 }
 #carro-2 {
-    background-image: url(/img/wp12509327-ford-raptor-4k-wallpapers.jpg);
+    background-image: url("../img/wp12509327-ford-raptor-4k-wallpapers.jpg");
 }
 #carro-3 {
-    background-image: url(/img/loris-demaria-oOeNmUogljU-unsplash.jpg);
+    background-image: url("../img/loris-demaria-oOeNmUogljU-unsplash.jpg");
 }
 
 article {
