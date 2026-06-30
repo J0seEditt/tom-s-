@@ -1,0 +1,197 @@
+/* formatar a pagina total*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+
+}
+
+/* Header css*/
+
+header {
+    height: 130px;
+    width: auto;
+    background-color: #082047;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+header img {
+    height: 230px;
+    width: auto;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    color: white;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+}
+header nav ul a:hover::after {
+  width: 100%;
+}
+
+.botoes-senha a {
+    text-decoration: none;
+    color: white;
+}
+
+.botoes-senha div a {
+    color: #082047;
+    background-color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 15px;
+    margin-right: 15px;
+}
+
+.botoes-senha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/*Main login*/
+
+main {
+    height: 500px;
+    width: auto;
+    background-color: #082047;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recover-container {
+    height: 240px;
+    width: 360px;
+
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    margin-bottom: 80px;
+    color: white;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    background: transparent;
+    border: 1px solid white;
+    outline: none;
+
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+}
+
+.input-svg {
+    padding-left: 35px; /* Espaço para o ícone não sobrepor o texto */
+    background-image: url('/img/user-alt-1-svgrepo-com.svg'); /* Ou o código em Data URI */
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 20px;
+    color: white;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.options a {
+    color: #764ba2;
+    text-decoration: none;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: white;
+    border: none;
+    color: #082047;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    background: #5a3782;
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.register-link a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*Footer CSS*/
+
+footer {
+    height: 260px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.servicos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.servicos a {
+    text-decoration: none;
+    color: #082047;
+}
+
+.if-copy {
+    font-size: 14px;
+    color: #082047;
+}

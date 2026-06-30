@@ -14,6 +14,8 @@ Está sem link para o index na logo do login - FEITO
 
 corrigir o tamanho das caixas css cSATRO
 
+colocar o certificado
+
 
 
 
