@@ -1,12 +1,9 @@
 const express = require('express');
-const cors = require('cors');
-const app = express();
-app.use(cors());
 const router = express.Router();
 
 
 
-app.get('/servicos', (req, res) => {
+router.get('/servicos', (req, res) => {
     const catalogoServicosCarros = [
         {
             "titulo": "Lavagem Express",
@@ -56,11 +53,4 @@ app.get('/servicos', (req, res) => {
 });
 
 
-app.listen(port, () => {
-    console.log("Serve ON");
-    console.log(`Server is running on http://localhost:${port}/servicos`);
-    console.log('Press Ctrl+C to stop the server.');
-
-}); 
-
-
+module.exports = router;

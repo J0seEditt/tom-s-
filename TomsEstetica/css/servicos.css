@@ -67,7 +67,10 @@ header nav ul a:hover::after {
     gap: 20px;
 }
 
-
+.botoes-senha img {
+    height: 30px;
+    
+}
 /*Main muito foda serviços*/
 
 .carro {

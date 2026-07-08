@@ -1,26 +1,17 @@
 const express = require('express');
-const app = express();
-const cors = require('cors')
-app.use(cors())
-app.use(express.json())
-const port = 8000;
-
+const router = express.Router();
 const listaUser = []
-
-app.post('/usuarios', (req, res) => {
-    const user  = req.body;
+router.get("/usuarios", (req, res) => {
+    res.json(listaUser);
+});
+router.post('/usuarios', (req, res) => {
+    const user = req.body;
     listaUser.push(user)
     console.log(req.body)
-    res.send("Aqui deu certo")
-
+    res.json({
+        mensagem: "Usuário cadastrado com sucesso"
+    });
+ 
 });
 
-
-
-
-app.listen(port, () => {
-    console.log("Serve ON");
-    console.log(`Server is running on http://localhost:${port}/usuarios`);
-    console.log('Press Ctrl+C to stop the server.');
-
-}); 
+module.exports = router;

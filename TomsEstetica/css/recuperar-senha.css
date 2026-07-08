@@ -70,7 +70,10 @@ header nav ul a:hover::after {
     align-items: center;
     gap: 20px;
 }
-
+.botoes-senha img {
+    height: 30px;
+    
+}
 /*Main login*/
 
 main {

@@ -73,6 +73,10 @@ header nav ul a:hover::after {
     transition: background 0.3s, transform 0.2s;
     
 }
+.botoes-senha img {
+    height: 30px;
+    
+}
 
 /*Main login*/
 

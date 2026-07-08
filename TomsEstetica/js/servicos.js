@@ -13,7 +13,7 @@ async function requisitarServicos() {
         if (index % 2 === 0) {
 
             servico.classList.add("item-esquerda")
-        } 
+        }
         else {
             servico.classList.add("servico");
         }
@@ -33,7 +33,7 @@ async function requisitarServicos() {
         let titulo = document.createElement("h2");
         let descricao = document.createElement("p");
 
-        
+
         if (index % 2 === 0) {
             servico.classList.add("item-esquerda")
         }
@@ -57,7 +57,7 @@ async function requisitarServicos() {
 
 requisitarServicos();
 
-async function validadeUsuario() {
+async function validadarUsuario() {
     const req = await fetch("http://localhost:8000/usuarios")
     const res = await req.json()
     if (res.length > 0) {
@@ -67,8 +67,12 @@ async function validadeUsuario() {
         icon.src = "../img/icons8-cliente-48.png"
 
         let nomeUsuarioLogin = document.createElement("p")
-        nomeUsuarioLogin.textContent = res["NomeDeUsuario"]
+        nomeUsuarioLogin.textContent = res[0].NomeDeUsuario;
+        divLogin.appendChild(icon);
+        divLogin.appendChild(nomeUsuarioLogin);
+
         nomeUsuarioLogin.style.color = "white"
         nomeUsuarioLogin.style.fontSize = "16px"
     }
-} validadarUsuario();
+}
+ validadarUsuario();

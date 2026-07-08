@@ -67,7 +67,13 @@ header nav ul a:hover::after {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    
 }
+.botoes-senha img {
+    height: 30px;
+    
+}
+
 /*Main CSS*/
 
 

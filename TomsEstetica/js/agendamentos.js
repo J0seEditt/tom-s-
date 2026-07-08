@@ -36,7 +36,7 @@ async function selecionarServicos() {
 const btn = document.getElementById('btn-enviar-resumo')
 btn.addEventListener("click", selecionarServicos);
 
-async function validadeUsuario() {
+async function validadarUsuario() {
     const req = await fetch("http://localhost:8000/usuarios")
     const res = await req.json()
     if (res.length > 0) {
@@ -46,8 +46,12 @@ async function validadeUsuario() {
         icon.src = "../img/icons8-cliente-48.png"
 
         let nomeUsuarioLogin = document.createElement("p")
-        nomeUsuarioLogin.textContent = res["NomeDeUsuario"]
+        nomeUsuarioLogin.textContent = res[0].NomeDeUsuario;
+        divLogin.appendChild(icon);
+        divLogin.appendChild(nomeUsuarioLogin);
+
         nomeUsuarioLogin.style.color = "white"
         nomeUsuarioLogin.style.fontSize = "16px"
     }
-} validadarUsuario();
+}
+ validadarUsuario();
