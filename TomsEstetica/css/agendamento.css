@@ -121,6 +121,9 @@ optgroup {
     padding: 15px 20px;
     border-radius: 5px;
     letter-spacing: 2px;
+
+    /**/ 
+    text-decoration: none;
 }
 
 .enviar-btn {
